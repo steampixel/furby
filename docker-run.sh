@@ -20,5 +20,5 @@
 sudo docker run -d -p 80:80 \
 --name officefurby \
 --privileged \
-steampixel/officefurby
+steampixel/furby
 

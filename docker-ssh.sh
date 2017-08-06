@@ -1,1 +1,1 @@
-sudo docker exec -i -t officefurby /bin/bash
+sudo docker exec -i -t furby /bin/bash

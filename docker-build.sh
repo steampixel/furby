@@ -1,1 +1,1 @@
-sudo docker build -t "steampixel/officefurby" .
+sudo docker build -t "steampixel/furby" .

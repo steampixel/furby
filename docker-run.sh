@@ -18,7 +18,7 @@
 #steampixel/officefurby
 
 sudo docker run -d -p 80:80 \
---name officefurby \
+--name furby \
 --privileged \
 steampixel/furby
 

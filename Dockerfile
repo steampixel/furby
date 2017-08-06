@@ -26,14 +26,14 @@ RUN apt-get install -y libapache2-mod-php5
 #Install espeak
 RUN apt-get install -y espeak
 
-#Enable the spi for gpio
+#Enable the spi for gpio (Not needed at the moment)
 #RUN echo dtparam=spi=on > /boot/config.txt
 
 #Install Alsa audio utilitys (needed for amixer command)
-#RUN apt-get install -y alsa-utils
+RUN apt-get install -y alsa-utils
 
-#Enable Audio jack (Audio jack seems to be enabled by default)
-#RUN echo amixer cset numid=3 1 > /etc/rc.local
+#Select audio jack as default audio output
+RUN echo amixer cset numid=3 1 > /etc/rc.local
 
 #copy files to image
 COPY src/ var/www/html/
